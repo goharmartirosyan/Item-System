@@ -10,6 +10,10 @@ public class Inventory {
         items = new ArrayList<>();
     }
 
+    public List<Item> getItems() {
+        return items;
+    }
+
     public void addItem(Item item) {
         items.add(item);
     }
@@ -74,8 +78,7 @@ public class Inventory {
                 System.out.println("Not enough Epic items to upgrade " + name + " (Epic 1)");
                 return false;
             } else {
-                items.remove(i);
-                System.out.println(i);
+                items.remove(epicItem);
                 matchingItems.add(epicItem);
             }
         } else if (rarity.equals("Epic 2")) {
