@@ -1,23 +1,22 @@
-#Inventory Management System
-##Overview
+# Inventory Management System
+## Overview
 This is a Java-based inventory management system that allows users to create, manage, and upgrade game items based on their rarity. Items can be upgraded by combining multiple items of the same type according to predefined upgrade rules. The system ensures proper inventory management, user interaction via the console, and error handling for invalid operations.
 
-##Features
+## Features
 Add new items to the inventory.
 Upgrade items based on predefined upgrade paths.
 Display the inventory with item counts, grouped by rarity.
 Handle invalid inputs gracefully.
 Enforce upgrade requirements through structured rules.
-##How to Run
+## How to Run
 Compile the Java files:
 javac *.java
 Run the Main class:
 java Main
 Follow the on-screen prompts to interact with the inventory system.
-##Error Handling
+## Error Handling
 1. Invalid Rarity Input
 When creating an item, if an invalid rarity type is provided, an IllegalArgumentException is thrown:
-
 throw new IllegalArgumentException("Invalid rarity type: " + rarityInput);
 The user is prompted to enter a valid rarity type.
 2. Invalid Epic Level
